@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pokimon</title>
+    <title>Pokimons</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="Icon" href="./images/ChatGPT.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -16,9 +17,9 @@
     <header>
         <div class="containers pt-[30px]">
             <div
-                class=" w-[750px] flex justify-between rounded-[50px] py-[8px] px-[8px] items-center overflow-hidden bg-white">
+                class=" items-center flex justify-between rounded-[50px] py-[8px] px-[8px]  overflow-hidden bg-white w-[750px]">
                 <input
-                    class="search-input w-[670px] text-[16px] outline-none placeholder-gray-300 text-gray-400 pl-[20px] border-r-[1px] border-r-gray-300 h-[40px]"
+                    class="search-input border-r-[1px] border-r-gray-300 outline-none placeholder-gray-300 text-gray-400 pl-[20px]  h-[40px] w-[670px] text-[16px]"
                     type="text" placeholder="Enter name or random number..." />
                 <button
                     class="search-button bg-red-500 hover:bg-red-800 px-[20px] py-[15px] text-white rounded-[50px] outline-none"
@@ -36,10 +37,10 @@
     <main>
         <section>
             <div class="containers pt-[100px] flex justify-between">
-                <ul class="pokimon-list w-[750px] justify-between flex flex-wrap gap-[100px]"></ul>
+                <ul class="pokimon-list  flex flex-wrap gap-[100px] w-[750px] justify-between"></ul>
             </div>
         </section>
-        <div class="modal-wrapper hidden fixed left-0 right-0 top-[150px] bottom-0 flex justify-end items-center">
+        <div class=" justify-end flex items-center modal-wrapper hidden fixed left-0 right-0 top-[150px] bottom-0 ">
             <div class="modal-inner w-[550px] px-[20px] py-[20px] rounded-[10px]"></div>
         </div>
     </main>

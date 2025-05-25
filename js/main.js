@@ -251,3 +251,22 @@ elModalWrapper.addEventListener("click", function (e) {
 document.addEventListener("DOMContentLoaded", () => {
     renderPokemons(pokemons, elPokimonList);
 });
+
+
+if (window.innerWidth < 480) {
+    // Telefon uchun maxsus JS o'zgarishlar
+  } else if (window.innerWidth < 768) {
+    // Planshet uchun maxsus JS o'zgarishlar
+  } else {
+    // Desktop uchun standart JS
+  }
+  
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 480) {
+      // Telefon uchun kod
+    } else {
+      // Boshqa qurilmalar uchun kod
+    }
+  });
+  
